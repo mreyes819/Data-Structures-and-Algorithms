@@ -1,32 +1,52 @@
 // non binary tree
-tree = {
+nonBinaryTree = {
   value: null,
   children: []
 };
 
 // binary tree
-tree = {
+binaryTree = {
   value: null,
   left: null,
   right: null
 }
 
 // binary search tree
-
-tree = {
-  value: 10,
+binaryTree = {
+  value: 'f',
   left: {
-    value: 5,
+    value: 'b',
     left: {
-      value: 1,
+      value: 'a',
       left: null,
       right: null
     },
-    right: null
+    right: {
+      value: 'd',
+      left: {
+        value:'c',
+        left: null,
+        right: null
+      },
+      right: {
+        value:'e',
+        left: null,
+        right: null
+      }
+    }
   },
   right: {
-    value: 15,
+    value: 'g',
     left: null,
-    right: null
+    right: {
+      value: 'i',
+      left: {
+        value: 'h',
+        left: null,
+        right: null
+      }
+    }
   }
 }
+
+module.exports = binaryTree;
