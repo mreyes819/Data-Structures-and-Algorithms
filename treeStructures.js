@@ -4,6 +4,17 @@ nonBinaryTree = {
   children: []
 };
 
+nonBinarytreeExampleData = {
+  value: 3,
+  children: [{
+    value: 2,
+    children: []
+  }, {
+    value: 1,
+    children: []
+  }, ]
+};
+
 // binary tree
 binaryTree = {
   value: null,
@@ -12,7 +23,7 @@ binaryTree = {
 }
 
 // binary search tree
-binaryTree = {
+binaryTreeExampleData = {
   value: 'f',
   left: {
     value: 'b',
@@ -49,4 +60,4 @@ binaryTree = {
   }
 }
 
-module.exports = binaryTree;
+module.exports = {binaryTreeExampleData, nonBinarytreeExampleData}
