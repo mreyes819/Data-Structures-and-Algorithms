@@ -1,20 +1,4 @@
-binaryTree = {
-  value: 10,
-  left: {
-    value: 5,
-    left: {
-      value: 1,
-      left: null,
-      right: null
-    },
-    right: null
-  },
-  right: {
-    value: 15,
-    left: null,
-    right: null
-  }
-}
+// require('./treeStructures'); // binaryTreeExampleData
 
 // 1) Write a function that finds the smallest value in a BST.
 function getBinaryMinValue(tree) {
@@ -23,8 +7,7 @@ function getBinaryMinValue(tree) {
     return getBinaryMinValue(tree.left)
   }
 }
-
-// console.log(getBinaryMinValue(binaryTree));
+// console.log(getBinaryMinValue(binaryTreeExampleData)); // a
 
 
 // 2) Write a function that finds the largest value in a BST
@@ -34,5 +17,8 @@ function getBinaryMaxValue(tree) {
     return getBinaryMaxValue(tree.right)
   }
 }
+// console.log(getBinaryMaxValue(binaryTreeExampleData)); // i
 
-// console.log(getBinaryMaxValue(binaryTree));
+
+module.exports.getMinValue = getBinaryMinValue;
+module.exports.getMaxValue = getBinaryMaxValue;
