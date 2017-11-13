@@ -1,3 +1,5 @@
+
+
 // 1) Write a function that traverses a non-binary tree depth-first.
 nonBinarytree = {
   value: 4,
