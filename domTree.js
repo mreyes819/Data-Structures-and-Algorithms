@@ -1,2 +1,6 @@
-// Write a function that’s meant to be run client-side that pretty-prints the DOM tree.
+var rootElement = document.documentElement;
+var firstTier = rootElement.childNodes;
 
+console.log(firstTier)
+
+// firstTier.forEach(child => console.log('child', child.childNodes))

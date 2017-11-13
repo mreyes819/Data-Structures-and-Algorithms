@@ -55,6 +55,7 @@ binaryTreeExampleData = {
         value: 'h',
         left: null,
         right: null
+
       }
     }
   }
