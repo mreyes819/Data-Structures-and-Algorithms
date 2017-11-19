@@ -17,16 +17,13 @@ function nonBinaryBF(node, cb) {
     let oldestNode = queue.shift();
 
     if (oldestNode) {
-      cb(oldestNode.value);
+      cb(oldestNode);
       oldestNode.children.forEach(child => queue.push(child));
       breadthFirst(queue);
     }
-  }
-
+  };
   breadthFirst(queue);
 };
-// nonBinaryBF(nonBinarytree, (node) => console.log(node))
-
 
 
 /*  2) Write a function that traverses a binary tree breadth-first.  */
@@ -63,8 +60,9 @@ function binaryBF(node, cb) {
   };
   breadthFirst(queue);
 };
-// binaryBF(binaryTree, (node)=> console.log(node.value))
+binaryBF(binaryTree, (node)=> console.log(node.value))
 
-
+module.exports.nonBinaryBF = nonBinaryBF;
+module.exports.binaryBF = binaryBF;
 
 
