@@ -1,14 +1,4 @@
 /*  1) Write a function that traverses a non-binary tree breadth-first.  */
-nonBinarytree = {
-  value: 3,
-  children: [{
-    value: 2,
-    children: []
-  }, {
-    value: 1,
-    children: []
-  }, ]
-};
 
 function nonBinaryBF(node, cb) {
   let queue = [node];
@@ -27,23 +17,6 @@ function nonBinaryBF(node, cb) {
 
 
 /*  2) Write a function that traverses a binary tree breadth-first.  */
-binaryTree = {
-  value: 4,
-  left: {
-    value: 8,
-    left: {
-      value: 7,
-      left: null,
-      right: null
-    },
-    right: null
-  },
-  right: {
-    value: 9,
-    left: null,
-    right: null
-  }
-};
 
 function binaryBF(node, cb) {
   let queue = [node];
