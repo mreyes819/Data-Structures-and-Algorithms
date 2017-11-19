@@ -36,7 +36,7 @@ const binaryTree = {
   }
 };
 
-test('Should print a non binary trees node values left to right breadth first', () => {
+test('Should print a binary trees node values left to right breadth first', () => {
   let result = [];
   binaryBF(binaryTree, (node) => result.push(node.value));
   expect(result).toEqual([4,8,9,7])

@@ -54,13 +54,12 @@ function binaryBF(node, cb) {
     if (oldestNode) {
       cb(oldestNode);
       if (oldestNode.left) queue.push(oldestNode.left);
-      else if (oldestNode.right) queue.push(oldestNode.right);
+      if (oldestNode.right) queue.push(oldestNode.right);
       breadthFirst(queue);
     }
   };
   breadthFirst(queue);
 };
-binaryBF(binaryTree, (node)=> console.log(node.value))
 
 module.exports.nonBinaryBF = nonBinaryBF;
 module.exports.binaryBF = binaryBF;
