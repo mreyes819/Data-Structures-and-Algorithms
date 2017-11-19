@@ -1,6 +1,7 @@
-
+const binaryTree = require('./treeStructures').binaryTreeExampleData;
 // 1) Write a function that prints a BST in ascending order.
 function printTreeAscending(tree) {
+  let ascendingResult = []
   if (tree.left) printTreeAscending(tree.left);
   if (tree.value) console.log(tree.value);
   if (tree.right) printTreeAscending(tree.right);
@@ -16,7 +17,7 @@ function printTreeDescending(tree) {
   if (tree.value) console.log(tree.value);
   if (tree.left) printTreeDescending(tree.left);
 };
-printTreeDescending(binaryTree); // I,H,G,F,E,D,C,B,A
+// printTreeDescending(binaryTree); // I,H,G,F,E,D,C,B,A
 
 
 module.exports.printTreeAscending = printTreeAscending;
