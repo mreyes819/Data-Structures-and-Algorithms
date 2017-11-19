@@ -9,9 +9,11 @@ function getLeafNodeCount(node) { // nodes with no children
 // console.log(getLeafNodeCount(binaryTreeExampleData)) // 4
 
 
-function GetNodeCount(node) { // count all the nodes
+function getNodeCount(node) { // count all the nodes
   if (!node) return 0;
-  return GetNodeCount(node.left) + GetNodeCount(node.right) + 1;
+  return getNodeCount(node.left) + getNodeCount(node.right) + 1;
 }
 
+module.exports.getLeafNodeCount = getLeafNodeCount;
+module.exports.getNodeCount = getNodeCount;
 // console.log(GetNodeCount(binaryTreeExampleData)) // 9
