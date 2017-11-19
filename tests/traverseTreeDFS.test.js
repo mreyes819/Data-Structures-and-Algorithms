@@ -1,5 +1,5 @@
-const nonBinaryDF = require('./traverseTreeDFS').nonBinaryDF;
-const binaryDF = require('./traverseTreeDFS').binaryDF;
+const nonBinaryDF = require('../traverseTreeDFS').nonBinaryDF;
+const binaryDF = require('../traverseTreeDFS').binaryDF;
 
 const nonBinarytree = {
   value: 4,

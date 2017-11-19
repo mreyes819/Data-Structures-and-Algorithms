@@ -1,7 +1,7 @@
-var binaryTreeExampleData = require('./treeStructures').binaryTreeExampleData;
+var binaryTreeExampleData = require('../treeStructures').binaryTreeExampleData;
 
-const getMin = require('./minMaxBST').getMinValue;
-const getMax = require('./minMaxBST').getMaxValue;
+const getMin = require('../minMaxBST').getMinValue;
+const getMax = require('../minMaxBST').getMaxValue;
 
 
 test('Gets minimum value in a binary tree', () => {
