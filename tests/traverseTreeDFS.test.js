@@ -15,13 +15,6 @@ const nonBinarytree = {
   }, ]
 };
 
-
-test('Should traverse a non binary tree depth first', () => {
-  let result = [];
-  nonBinaryDF(nonBinarytree, (node) => result.push(node.value));
-  expect(result).toEqual([4,3,2,1]);
-});
-
 const binaryTree = {
   value: 4,
   left: {
@@ -40,8 +33,16 @@ const binaryTree = {
   }
 };
 
+test('Should traverse a non binary tree depth first', () => {
+  let result = [];
+  nonBinaryDF(nonBinarytree, (node) => result.push(node.value));
+  expect(result).toEqual([4, 3, 2, 1]);
+});
+
+
+
 test('Should traverse a binary tree depth first', () => {
   let result = [];
   binaryDF(binaryTree, (node) => result.push(node.value));
-  expect(result).toEqual([4,8,7,9])
+  expect(result).toEqual([4, 8, 7, 9])
 });

@@ -1,5 +1,5 @@
-// 1) Write a function that traverses a non-binary tree depth-first.
-function nonBinaryDF(node, cb) {
+// 1) A function that traverses a non-binary tree depth-first
+nonBinaryDF = function(node, cb) {
   if (!node.children) return;
   else if (node) {
     cb(node);
@@ -8,8 +8,8 @@ function nonBinaryDF(node, cb) {
 };
 
 
-// 2) Write a function that traverses a binary tree depth-first.
-function binaryDF(node, cb) {
+// 2) A function that traverses a binary tree depth-first
+binaryDF = function(node, cb) {
   if (node) {
     cb(node);
     binaryDF(node.left, cb);
@@ -17,6 +17,4 @@ function binaryDF(node, cb) {
   }
 };
 
-
-module.exports.nonBinaryDF = nonBinaryDF;
-module.exports.binaryDF = binaryDF;
+module.exports = {nonBinaryDF, binaryDF}

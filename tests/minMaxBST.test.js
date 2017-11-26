@@ -1,4 +1,4 @@
-var binaryTreeExampleData = require('../treeStructures').binaryTreeExampleData;
+var binaryTreeExampleData = require('../trees/treeStructures').binaryTreeExampleData;
 
 const getMin = require('../minMaxBST').getMinValue;
 const getMax = require('../minMaxBST').getMaxValue;

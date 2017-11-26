@@ -1,4 +1,4 @@
-require('./treeStructures');
+require('./trees/treeStructures');
 
 
 function getLeafNodeCount(node) { // nodes with no children

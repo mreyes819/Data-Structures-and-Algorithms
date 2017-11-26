@@ -1,6 +1,7 @@
-/*  1) Write a function that traverses a non-binary tree breadth-first.  */
 
-function nonBinaryBF(node, cb) {
+
+// 1) A function that traverses a non-binary tree breadth-first
+const nonBinaryBF = function(node, cb) {
   let queue = [node];
 
   function breadthFirst(queue) {
@@ -16,9 +17,8 @@ function nonBinaryBF(node, cb) {
 };
 
 
-/*  2) Write a function that traverses a binary tree breadth-first.  */
-
-function binaryBF(node, cb) {
+// 2) A function that traverses a binary tree breadth-first
+const binaryBF = function(node, cb) {
   let queue = [node];
 
   function breadthFirst(queue) {
@@ -34,7 +34,6 @@ function binaryBF(node, cb) {
   breadthFirst(queue);
 };
 
+
 module.exports.nonBinaryBF = nonBinaryBF;
 module.exports.binaryBF = binaryBF;
-
-

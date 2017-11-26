@@ -1,6 +1,6 @@
-// require('./treeStructures'); // binaryTreeExampleData
+// require('./trees/treeStructures'); // binaryTreeExampleData
 
-// 1) Write a function that finds the smallest value in a BST.
+// 1) A function that finds the smallest value in a BST.
 function getBinaryMinValue(tree) {
   if (!tree.left) return tree.value;
   while(tree.left) {

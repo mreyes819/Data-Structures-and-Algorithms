@@ -1,4 +1,4 @@
-var binaryTreeExampleData = require('./treeStructures').binaryTreeExampleData;
+var binaryTreeExampleData = require('./trees/treeStructures').binaryTreeExampleData;
 
 const getLeafNodeCount = require('./nodeCount').getLeafNodeCount;
 const getNodeCount = require('./nodeCount').getNodeCount;

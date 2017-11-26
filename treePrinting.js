@@ -1,4 +1,4 @@
-const binaryTree = require('./treeStructures').binaryTreeExampleData;
+const binaryTree = require('./trees/treeStructures').binaryTreeExampleData;
 // 1) Write a function that prints a BST in ascending order.
 function printTreeAscending(tree) {
   let ascendingResult = []
