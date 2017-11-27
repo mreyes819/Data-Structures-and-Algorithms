@@ -98,4 +98,4 @@ const postOrderDescending = function(node, cb) {
 
 
 
-module.exports={breadthFirstAscending, breadthFirstDescending}
+module.exports={breadthFirstAscending, breadthFirstDescending, preOrderAscending, preOrderDescending, postOrderAscending, postOrderDescending}
