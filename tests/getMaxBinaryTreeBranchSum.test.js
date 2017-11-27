@@ -1,4 +1,4 @@
-const getMaxBinaryTreeBranchSum = require('../<getMaxBinary></getMaxBinary>TreeBranchSum').getMaxBinaryTreeBranchSum
+const getMaxBinaryTreeBranchSum = require('../getMaxBinaryTreeBranchSum').getMaxBinaryTreeBranchSum
 const tree = require('../trees/treeBinary');
 
 const binaryTree = {
