@@ -9,31 +9,33 @@
 
 function breadthFirstAscending(node, cb) {
   let queue = [node];
+
   function breadth(queue) {
     let oldestNode = queue.shift();
     if (oldestNode) {
       cb(oldestNode);
-      if(oldestNode.left) queue.push(oldestNode.left);
-      if(oldestNode.right) queue.push(oldestNode.right)
+      if (oldestNode.left) queue.push(oldestNode.left);
+      if (oldestNode.right) queue.push(oldestNode.right)
       breadth(queue)
     }
   };
-  breadth(queue,cb);
+  breadth(queue, cb);
 };
 
 
 function breadthFirstDescending(node, cb) {
   let queue = [node];
+
   function breadth(queue) {
     let oldestNode = queue.shift();
     if (oldestNode) {
       cb(oldestNode);
-      if(oldestNode.right) queue.push(oldestNode.right)
-      if(oldestNode.left) queue.push(oldestNode.left);
+      if (oldestNode.right) queue.push(oldestNode.right)
+      if (oldestNode.left) queue.push(oldestNode.left);
       breadth(queue)
     }
   };
-  breadth(queue,cb);
+  breadth(queue, cb);
 };
 
 
@@ -56,15 +58,13 @@ function inOrderAscending(node, cb) {
   if (node.value) cb(node);
   if (node.right) inOrderAscending(node.right, cb);
 };
-// inOrderAscending(binarySearchTree, (node) => console.log(node.value)); // ABCDEFGHI
 
 
 function inOrderDescending(node, cb) {
   if (node.right) inOrderDescending(node.right, cb);
   if (node.value) cb(node);
   if (node.left) inOrderDescending(node.left, cb);
-}
-// inOrderDescending(binarySearchTree, (node) => console.log(node.value)); // IHGFEDCBA
+};
 
 
 function postOrderAscending(node, cb) {
@@ -72,7 +72,6 @@ function postOrderAscending(node, cb) {
   if (node.right) postOrderAscending(node.right, cb);
   if (node) cb(node);
 };
-// postOrderAscending(binarySearchTree, (node) => console.log(node.value)); // ACEDBHIGF
 
 
 function postOrderDescending(node, cb) {
@@ -80,13 +79,6 @@ function postOrderDescending(node, cb) {
   if (node.left) postOrderDescending(node.left, cb);
   if (node) cb(node);
 };
-// postOrderDescending(binarySearchTree, (node) => console.log(node.value)); // HIGECDABF
 
 
-
-
-module.exports = {breadthFirstAscending, breadthFirstDescending, preOrderAscending, preOrderDescending, inOrderAscending, inOrderDescending, postOrderAscending, postOrderDescending}
-
-
-
-
+module.exports = { breadthFirstAscending, breadthFirstDescending, preOrderAscending, preOrderDescending, inOrderAscending, inOrderDescending, postOrderAscending, postOrderDescending };
