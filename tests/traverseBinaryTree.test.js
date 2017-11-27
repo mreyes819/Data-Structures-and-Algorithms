@@ -3,14 +3,14 @@ const binaryTree = require('../trees/treeBinarySearch');
 
 
 describe('Breadth first', () => {
-  test('in ascending order', () => {
+  test('should traverse in ascending order', () => {
     const result = [];
     traverseBinaryTree.breadthFirstAscending(binaryTree,
       (node) => result.push(node.value));
     expect(result.join('')).toEqual('fbgadiceh');
   });
 
-  test('in descending order', () => {
+  test('should traverse in descending order', () => {
     const result = [];
     traverseBinaryTree.breadthFirstDescending(binaryTree,
       (node) => result.push(node.value));
@@ -20,14 +20,14 @@ describe('Breadth first', () => {
 
 
 describe('Pre-Order', () => {
-  test('ascending', () => {
+  test('should traverse in ascending order', () => {
     const result = [];
     traverseBinaryTree.preOrderAscending(binaryTree,
       (node) => result.push(node.value));
     expect(result.join('')).toEqual('fbadcegih');
   });
 
-  test('descending', () => {
+  test('should traverse in descending order', () => {
     const result = [];
     traverseBinaryTree.preOrderDescending(binaryTree,
       (node) => result.push(node.value));
@@ -37,14 +37,14 @@ describe('Pre-Order', () => {
 
 
 describe('In-Order', () => {
-  test('ascending', () => {
+  test('should traverse in ascending order', () => {
     const result = [];
     traverseBinaryTree.inOrderAscending(binaryTree,
       (node) => result.push(node.value));
     expect(result.join('')).toEqual('abcdefghi');
   });
 
-  test('descending', () => {
+  test('should traverse in descending order', () => {
     const result = [];
     traverseBinaryTree.inOrderDescending(binaryTree,
       (node) => result.push(node.value));
@@ -54,14 +54,14 @@ describe('In-Order', () => {
 
 
 describe('Post-Order', () => {
-  test('ascending', () => {
+  test('should traverse in ascending order', () => {
     const result = [];
     traverseBinaryTree.postOrderAscending(binaryTree,
       (node) => result.push(node.value));
     expect(result.join('')).toEqual('acedbhigf');
   });
 
-  test('descending', () => {
+  test('should traverse in descending order', () => {
     const result = [];
     traverseBinaryTree.postOrderDescending(binaryTree,
       (node) => result.push(node.value));
