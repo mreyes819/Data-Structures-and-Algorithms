@@ -42,7 +42,6 @@ function preOrderAscending(node, cb) { // AKA depthFirstAscending
   if (node.left) preOrderAscending(node.left, cb);
   if (node.right) preOrderAscending(node.right, cb);
 };
-// preOrderAscending(binarySearchTree, (node) => console.log(node.value)); // FBADCEGIH
 
 
 function preOrderDescending(node, cb) { // AKA depthFirstDescending
@@ -50,7 +49,6 @@ function preOrderDescending(node, cb) { // AKA depthFirstDescending
   if (node.right) preOrderDescending(node.right, cb);
   if (node.left) preOrderDescending(node.left, cb);
 };
-// preOrderDescending(binarySearchTree, (node) => console.log(node.value)); // FGIHBDECA
 
 
 function inOrderAscending(node, cb) {

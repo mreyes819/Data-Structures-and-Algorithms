@@ -1,6 +1,7 @@
 const traverseBinaryTree = require('../traverseBinaryTree')
 const binaryTree = require('../trees/treeBinarySearch')
 
+
 describe('Breadth first', () => {
   test('in ascending order', () => {
     let result = [];
@@ -15,11 +16,22 @@ describe('Breadth first', () => {
       (node) => result.push(node.value));
     expect(result.join('')).toEqual('fgbidahec')
   });
-
 });
 
-describe('Depth first', () => {
-  test('in ascending order', () => {
 
-  })
+describe('Pre-Order', () => {
+  test('ascending', () => {
+    let result = [];
+    traverseBinaryTree.preOrderAscending(binaryTree,
+      (node) => result.push(node.value));
+    expect(result.join('')).toEqual('fbadcegih')
+  });
+
+  test('descending', () => {
+    let result = [];
+    traverseBinaryTree.preOrderDescending(binaryTree,
+      (node) => result.push(node.value));
+    expect(result.join('')).toEqual('fgihbdeca')
+  });
 });
+
