@@ -22,8 +22,6 @@ const breadthFirstAscending = function(node, cb) {
   };
   breadthFirst(queue);
 }
-breadthFirstAscending(tree, (node) => console.log(node.value))
-// 312abc
 
 const breadthFirstDescending = function(node, cb) {
   let stack = [node];
@@ -49,11 +47,10 @@ const breadthFirstDescending = function(node, cb) {
   breadthFirst(stack);
 }
 
-// breadthFirstDescending(tree, (node) => console.log(node.value))
-// 321cba
-
 
 
 // pre order
 
 // post order
+
+module.exports={breadthFirstAscending, breadthFirstDescending}
