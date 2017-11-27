@@ -1,4 +1,4 @@
-module.exports = {
+module.exports.tree = {
   value: 3,
   children: [
     {
@@ -7,13 +7,13 @@ module.exports = {
     }, {
       value: 1,
       children: [{
-        value: 3,
+        value: 'a',
         children: []
       }, {
-        value: 2,
+        value: 'b',
         children: []
       }, {
-        value: 1,
+        value: 'c',
         children: []
       }]
     }
