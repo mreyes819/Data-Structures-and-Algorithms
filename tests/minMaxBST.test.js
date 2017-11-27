@@ -1,13 +1,11 @@
-var binaryTreeExampleData = require('../trees/treeStructures').binaryTreeExampleData;
-
-const getMin = require('../minMaxBST').getMinValue;
-const getMax = require('../minMaxBST').getMaxValue;
+const minMaxBST = require('../minMaxBST');
+const tree = require('../trees/treeBinarySearch');
 
 
-test('Gets minimum value in a binary tree', () => {
-  expect(getMin(binaryTreeExampleData)).toBe('a');
+test('should return the minimum value in a binary search tree', () => {
+  expect(minMaxBST.getMinValue(tree)).toEqual('a');
 });
 
-test('Gets maximum value in a binary tree', () => {
-  expect(getMax(binaryTreeExampleData)).toBe('i');
+test('should return the maximum value of a binary search tree', () => {
+  expect(minMaxBST.getMaxValue(tree)).toEqual('i');
 });
