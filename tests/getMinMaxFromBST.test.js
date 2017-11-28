@@ -1,5 +1,5 @@
-const minMaxBST = require('../minMaxBST');
-const tree = require('../trees/treeBinarySearch');
+const minMaxBST = require('../getMinMaxFromBST');
+const tree = require('../treeExamples/exampleBinarySearchTree');
 
 
 test('should return the minimum value in a binary search tree', () => {

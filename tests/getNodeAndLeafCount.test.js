@@ -1,4 +1,4 @@
-const binaryTree = require('../trees/treeBinary');
+const binaryTree = require('../treeExamples/exampleBinaryTree');
 const getLeafNodeCount = require('../getNodeAndLeafCount').getLeafNodeCount;
 const getNodeCount = require('../getNodeAndLeafCount').getNodeCount;
 

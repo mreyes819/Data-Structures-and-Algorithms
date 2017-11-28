@@ -1,5 +1,5 @@
-const traverseBinaryTree = require('../traverseBinaryTree');
-const binaryTree = require('../trees/treeBinarySearch');
+const traverseBinaryTree = require('../traverseBinaryTreeAlgorithms');
+const binaryTree = require('../treeExamples/exampleBinarySearchTree');
 
 
 describe('Breadth first', () => {
