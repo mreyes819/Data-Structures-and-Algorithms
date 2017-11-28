@@ -1,5 +1,3 @@
-const tree = require('./trees/tree');
-
 /* Notes:
   See:
   Ascending: left-to-right
@@ -46,56 +44,37 @@ const breadthFirstDescending = function(node, cb) {
   };
   breadthFirst(stack);
 }
-// breadthFirstDescending(tree, child => console.log(child.value))
 
-// pre order ascending
 const preOrderAscending = function(node, cb) {
   if(node) cb(node);
   if(node.children.length) {
-    node.children.forEach(child => preOrderAscending(child, cb))
+    node.children.forEach(child => preOrderAscending(child, cb));
   }
 }
-// preOrderAscending(tree, child => console.log(child.value))
 
-// pre order descending
 const preOrderDescending = function(node, cb) {
   if(node) cb(node);
   if(node.children.length) {
     for(var c = node.children.length - 1; c >= 0; c--) {
-      preOrderDescending(node.children[c], cb)
+      preOrderDescending(node.children[c], cb);
     }
   }
 }
-// preOrderDescending(tree, child => console.log(child.value))
 
-
-// post order ascending
 const postOrderAscending = function(node, cb) {
   if(node.children) {
-    node.children.forEach(child => postOrderAscending(child, cb))
+    node.children.forEach(child => postOrderAscending(child, cb));
   }
-  cb(node)
+  cb(node);
 }
-// postOrderAscending(tree, child => console.log(child.value))
-// a1bc23
 
-
-
-// post order descending
 const postOrderDescending = function(node, cb) {
   if(node.children) {
     for(var c = node.children.length -1; c >= 0; c--) {
       postOrderDescending(node.children[c], cb);
     }
   }
-  cb(node)
+  cb(node);
 }
-// postOrderDescending(tree, child => console.log(child.value))
-// cb2a13
-
-
-
-
-
 
 module.exports={breadthFirstAscending, breadthFirstDescending, preOrderAscending, preOrderDescending, postOrderAscending, postOrderDescending}
