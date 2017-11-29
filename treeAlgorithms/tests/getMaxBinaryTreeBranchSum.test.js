@@ -1,6 +1,6 @@
 const getMaxBinaryTreeBranchSum = require('../getMinMaxBinaryTreeBranchSum').getMaxBinaryTreeBranchSum
 const getMinBinaryTreeBranchSum = require('../getMinMaxBinaryTreeBranchSum').getMinBinaryTreeBranchSum
-const tree = require('../treeExamples/exampleBinaryTree');
+const tree = require('../treeData/exampleBinaryTree');
 
 const binaryTree = {
   value: null,

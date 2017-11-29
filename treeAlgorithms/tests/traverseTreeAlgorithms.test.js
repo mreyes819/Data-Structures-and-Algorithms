@@ -1,5 +1,5 @@
 const traverseTree = require('../traverseTreeAlgorithms');
-const tree = require('../treeExamples/exampleTree');
+const tree = require('../treeData/exampleTree');
 
 
 test('should taverse a tree breadth first left to right', () => {

@@ -1,5 +1,3 @@
-const binaryTree = require('./treeExamples/exampleBinaryTree')
-
 function getMaxBinaryTreeBranchSum(node) {
   if (!node) return 0;
   return node.value +

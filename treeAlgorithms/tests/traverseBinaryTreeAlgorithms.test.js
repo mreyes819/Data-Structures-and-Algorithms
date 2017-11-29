@@ -1,5 +1,5 @@
 const traverseBinaryTree = require('../traverseBinaryTreeAlgorithms');
-const binaryTree = require('../treeExamples/exampleBinarySearchTree');
+const binaryTree = require('../treeData/exampleBinarySearchTree');
 
 
 describe('Breadth first', () => {
