@@ -2,7 +2,7 @@ var Tree = function(value) {
   var newTree = {};
   newTree.value = value;
   newTree.children = [];
-  return _.extend(newTree, treeMethods);
+  return Object.assign(newTree, treeMethods);
 };
 
 var treeMethods = {};
@@ -10,22 +10,6 @@ var treeMethods = {};
 treeMethods.addChild = function(value) {
   this.children.push(Tree(value));
 };
-
-// depth search
-/*
-treeMethods.contains = function(target) {
-  var flag = false;
-  var depthSearch = function(node) {
-    if (node.value === target) {
-      flag = true;
-    } else if (node.children.length) {
-      node.children.forEach(child => depthSearch(child));
-    }
-  }
-  depthSearch(this);
-  return flag;
-};
-*/
 
 treeMethods.contains = function(target) {
   var flag = false;
@@ -44,3 +28,5 @@ treeMethods.contains = function(target) {
   breadthSearch(queue);
   return flag;
 };
+
+module.exports.Tree = Tree;
