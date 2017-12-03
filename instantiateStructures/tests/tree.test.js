@@ -1,6 +1,5 @@
 const Tree = require('../tree').Tree;
 
-
 describe('tree', function() {
   var tree;
 

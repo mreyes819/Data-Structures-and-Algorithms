@@ -1,3 +1,5 @@
+// A tree class, in functional with shared methods style
+
 var Tree = function(value) {
   var newTree = {};
   newTree.value = value;
