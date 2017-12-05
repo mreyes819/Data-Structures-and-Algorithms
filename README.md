@@ -1,5 +1,5 @@
 ## About
-### Instantiate Structures:
+### Data Structures:
 - Binary Search Tree
 - Linked List
 - Set
